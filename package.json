@@ -1,0 +1,19 @@
+{
+  "name": "eightball",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ball.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhua1989/eightball.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhua1989/eightball/issues"
+  },
+  "homepage": "https://github.com/zhua1989/eightball#readme"
+}
