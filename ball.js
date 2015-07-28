@@ -23,7 +23,7 @@ var server = net.createServer(function(connection) {
     connection.on('data', function(dataFromClient) {
         connection.setEncoding("utf8")
         var randomAnswer = eightBallArray[Math.floor(Math.random()*eightBallArray.length)];
-        connection.write(randomAnswer);
+        connection.write(randomAnswer + "\n");
 
     })
 })
