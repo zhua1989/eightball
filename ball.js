@@ -22,8 +22,14 @@ var server = net.createServer(function(connection) {
     console.log("I'm connected")
     connection.on('data', function(dataFromClient) {
         connection.setEncoding("utf8")
-        var randomAnswer = eightBallArray[Math.floor(Math.random()*eightBallArray.length)];
+        var userQuestion = dataFromClient.toString().trim();
+        if (userQuestion.search(/?+/g) != -1) {
+
+        var randomAnswer = eightBallArray[Math.floor(Math.random() * eightBallArray.length)];
         connection.write(randomAnswer + "\n");
+        } else {
+        	connection.write("That's not a question" + "\n")
+        }
 
     })
 })
